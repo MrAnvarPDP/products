@@ -1,0 +1,16 @@
+.products{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+.form{
+    text-align: center;
+}
+
+.imgs{
+ width:200px;
+ cursor: pointer;
+}
