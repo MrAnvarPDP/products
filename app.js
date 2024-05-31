@@ -121,3 +121,18 @@ function render(array, list) {
 }
 
 render(products, elList);
+
+const elSelect = document.querySelector(".js-select");
+
+elSelect.addEventListener("change", () => {
+  console.log(elSelect.value);
+
+  if (elSelect.value == "max-price") {
+    products.sort((a, b) => b.price - a.price);
+    render(products, elList);
+  }
+  if (elSelect.value == "min-price") {
+    products.sort((b, a) => b.price - a.price);
+    render(products, elList);
+  }
+});
